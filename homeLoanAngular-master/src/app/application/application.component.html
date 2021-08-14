@@ -1,0 +1,45 @@
+<p>application works!</p>
+<div class="container">
+    <form #myForm="ngForm" (ngSubmit)="saveData()">
+        <h2>Application Form</h2>
+        <hr/>
+        <br/>
+       
+            <p>
+                <label for="applicationid">Application ID</label> 
+                <input  type="text" name="applicationid" [(ngModel)]="app.applicationid" required>      
+                <p>
+                <p>
+                <label for="custid">Customer ID</label>  
+                <input  type="number" name="custid" [(ngModel)]="app.custid" required>       
+                <p>
+                <p>
+                <label for="propertyname">Property Name</label>  
+                <input  type="text" name="propertyname" [(ngModel)]="app.propertyname" >      
+                <p>
+                <p>
+                <label for="propertylocation">Property Location</label>  
+                <input  type="text" name="propertylocation" [(ngModel)]="app.propertylocation" required>      
+                <p>
+                <p>
+                <label for="estimatedamount">Estimated Amount</label> 
+                <input  type="number" name="estimatedamount" [(ngModel)]="app.estimatedamount" required>      
+                <p>
+                <p>
+                <label for="loanstatus">Loan Status</label> 
+                <input  type="text" name="loanstatus" [(ngModel)]="app.loanstatus" required>      
+                <p>
+                
+                   
+               <input type="submit" value="Save t" class="btn btn-primary" [disabled]="!myForm.valid">     
+            
+           <br>
+           <br>
+                  
+                <button (click)="Home()" class="btn btn-primary">Home</button>       
+            
+
+   
+
+    </form>    
+</div>

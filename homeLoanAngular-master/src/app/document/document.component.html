@@ -1,0 +1,33 @@
+
+<div class="container">
+    <form #myForm="ngForm" (ngSubmit)="saveData()">
+        <h2>User Document Details</h2>
+       
+            <!-- <tr>
+                <td><label for="docid">Document ID</label> </td>   
+                <td><input  type="number" name="docid" [(ngModel)]="doc.docid" required></td>       
+            </tr> -->
+            <p>
+                <label for="custid">Customer ID</label>    
+                <input  type="number" name="custid" [(ngModel)]="doc.custid" required>       
+            </p>
+            <p>
+                <label for="pancardnum">Pan Card Number</label>    
+                <input  type="text" name="pancardnum" [(ngModel)]="doc.pancardnum" required>       
+            </p> 
+                <p>
+            <label for="aadharcardnum">Aadhar Card Number</label>   
+            <input  type="number" name="aadharcardnum" [(ngModel)]="doc.aadharcardnum" required>       
+        </p>
+            <p>
+                <label for="voteridnum">Voter ID Number</label>  
+                <input  type="text" name="voteridnum" [(ngModel)]="doc.voteridnum" required>       
+            </p>
+                <p>
+                <input type="submit" value="Save" class="btn btn-primary" [disabled]="!myForm.valid" >      
+            </p>
+            <button type="button" (click)="ApplicationDetails()" class="btn btn-primary">Submit</button>
+    
+
+    </form>    
+</div>
